@@ -1,0 +1,11 @@
+[Unit]
+Description=Monitors the activity of media players in the background
+Documentation=https://github.com/altdesktop/playerctl?tab=readme-ov-file#selecting-players-to-control
+BindsTo=sway-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/playerctld
+
+[Install]
+WantedBy=sway-session.target
