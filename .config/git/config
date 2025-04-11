@@ -1,0 +1,12 @@
+[user]
+	name = ismailarilik
+	email = arilik.ismail@gmail.com
+[init]
+	defaultBranch = main
+
+[url "ssh://aur@aur.archlinux.org/"]
+	insteadOf = https://aur.archlinux.org/
+	insteadOf = http://aur.archlinux.org/
+	insteadOf = git://aur.archlinux.org/
+[alias]
+	graph = log --graph --oneline --decorate

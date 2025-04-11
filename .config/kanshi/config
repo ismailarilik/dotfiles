@@ -1,0 +1,10 @@
+profile {
+    output eDP-1 disable
+    output HDMI-A-1 enable
+
+    exec swaymsg workspace 1, move workspace to HDMI-A-1
+}
+
+profile {
+    output eDP-1 enable
+}
