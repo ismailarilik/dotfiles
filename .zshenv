@@ -1,11 +1,13 @@
 # Define XDG Base Directories
-XDG_CONFIG_HOME=$HOME/.config
-XDG_CACHE_HOME=$HOME/.cache
-XDG_DATA_HOME=$HOME/.local/share
-XDG_STATE_HOME=$HOME/.local/state
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CACHE_HOME=$HOME/.cache
+export XDG_DATA_HOME=$HOME/.local/share
+export XDG_STATE_HOME=$HOME/.local/state
+export XDG_DATA_DIRS=/usr/local/share:/usr/share
+export XDG_CONFIG_DIRS=/etc/xdg
 
 # Default editor
-export EDITOR="emacsclient -c"
+export EDITOR="emacs"
 
 # To colorize output of `less`
 export LESS='-R --use-color -Dd+r$Du+b$'
