@@ -67,8 +67,6 @@ input * {
     xkb_layout "tr"
 }
 
-input keyboard xkb_model "pc105"
-
 input type:touchpad {
     tap enabled
     natural_scroll enabled
