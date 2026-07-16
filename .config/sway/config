@@ -232,8 +232,8 @@ bindsym $mod+r mode "resize"
     # Special key to toggle backlight
     bindsym --locked $mod+Delete exec sh ~/.config/sway/toggle-backlight.sh
 
-    # Special key to take a screenshot with grim
-    bindsym Print exec grim
+    # Special key to take and edit a screenshot	of a screen region using grim, slurp and swappy                                                                                                
+    bindsym Print exec grim -g "$(slurp)" - | swappy -f -
 
     # Special key to run an application with wmenu
     bindsym XF86Search exec wmenu-run
